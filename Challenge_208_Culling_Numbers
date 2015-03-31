@@ -1,0 +1,13 @@
+''' this program removes duplicates froma string of numbers
+    this also works on strngs'''
+
+from collections import OrderedDict
+
+uniques = OrderedDict
+
+usrinput = raw_input('Enter a string of numbers: ').split()
+for x in usrinput:
+    if x not in uniques:
+        uniques[x] = None
+
+print (' '.join(uniques.keys()))
